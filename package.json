@@ -1,0 +1,22 @@
+{
+    "name": "osu-bot",
+    "version": "1.0.0",
+    "description": "Complete Osu bot with slash commands",
+    "main": "src/index.ts",
+    "type": "module",
+    "scripts": {
+        "dev": "bun --hot src/index.ts",
+        "start": "bun src/index.ts",
+        "build": "bun build src/index.ts --outdir dist",
+        "deploy": "bun src/deploy.ts"
+    },
+    "dependencies": {
+        "discord.js": "^14.14.1",
+        "osu-web.js": "^2.4.0",
+        "rosu-pp-js": "^3.1.0"
+    },
+    "devDependencies": {
+        "@types/bun": "latest",
+        "typescript": "^5.0.0"
+    }
+}
